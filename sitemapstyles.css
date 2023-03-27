@@ -1,0 +1,38 @@
+
+h1{
+    text-align: center;
+    margin-top: 5%;
+    font-size: 84px;
+}
+
+.container{
+    width: calc(100% - 10rem);
+    margin: 120px auto 0 auto;
+    border-radius: 3rem;
+    background-color: #fef2f6;
+    padding: 40px 20px 20px 20px;
+    overflow-x: hidden;
+}
+    
+svg{
+    margin-left: -120px;
+}
+
+text{
+    cursor: pointer;
+}
+
+g:hover polygon, g:hover rect, g:focus polygon, g:focus rect{
+    stroke: black;
+    stroke-width: 2.5;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 1.3s linear forwards;
+}
+
+@keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+}
+
